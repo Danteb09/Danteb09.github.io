@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VIM Basics</title>
+    <script src='validate.js'></script>
+    <style>
+        h1,h2,h3{
+            font-family: sans-serif;
+        }
+        p{
+            font-family: sans-serif;
+        }
+        kbd{
+        background-color: #f7f7f7;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        color: #333;
+        }
+        code{
+        background-color: #f7f7f7;
+        border: 1px dashed #ccc;
+        color: #333;
+        display: inline-block;
+        }
+        li{
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Using VIM to Make a Website</h1>
+        <p>Learn how to open VIM, move around in it, and have text put onto a
+        website!</p>
+    </header>
+    <main>
+        <section>
+            <h2>Opening VIM</h2>
+
+            <p>To open VIM, simply type <kbd>vim [filename]</kbd> into your
+            terminal, assuming you are in the directory that holds your
+            file.</p>
+
+            <h2>Modes</h2>
+            <p>Here are some modes that will get you started on VIM;
+            there are many more modes available, beyond these.</p>
+            <ul>
+            <li>On entry, you are in NORMAL mode, where you use 
+            <kbd>h</kbd>, <kbd>j</kbd>, <kbd>k</kbd>, and <kbd>l</kbd> to
+            move left, down, up, and right, respectively.<br> You can move
+            using the arrow keys, as well. To return to NORMAL mode from
+            any other mode, press <kbd>esc</kbd>.</li>
+
+            <li>Press <kbd>i</kbd> to enter INSERT mode.
+            Within insert mode, you can type, delete, and copy and paste
+            text as if you <br> were editing a document (because you are).
+            </li>
+
+            <li>Press <kbd>shift + ;</kbd> or <kbd>:</kbd> to enter 
+            Command-Line mode. The command line lets you save your work
+            with <kbd>w</kbd>, quit with <br><kbd>q</kbd>, or even do both with
+            <kbd>wq</kbd>, after you press <kbd>return</kbd>. There are
+            many more commands as well, such as <kbd>syntax on</kbd>, <br>
+            which turns on colored syntax.</li>
+
+            <li>Press <kbd>v</kbd> to enter VISUAL mode by character, <kbd>
+            shift + v</kbd> or <kbd>V</kbd> to enter it linewise, or <kbd>
+            ctrl + v</kbd> to enter it blockwise.</li>
+            </ul> 
+
+            <h2>Bare-Bones HTML</h2>
+
+            <p>This is the minimum HTML page. You can copy and paste it into a 
+            .html document using VIM:<br><br>
+            <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="en"&gt;<br>
+                &lt;head&gt;<br>
+                &lt;title&gt;This is the website's title&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;p&gt;This is where the website text goes&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt; 
+            </code></p>
+            <h2>Adding Basic Text</h2>
+            <p>By using a <code>&lt;p&gt;</code> element, you can write some
+            paragraph text for your website.
+            <ol>
+                <li>Type <code>&lt;p&gt;</code> between <code>&lt;body&gt;
+                    </code> and <code>&lt;/body&gt;</code></li>
+                <li>Write what you want to write!
+                    <ul>
+                        <li>Use <code>&lt;br&gt;</code> to put text into a
+                            new line; html doesn't care about the line breaks 
+                            in VIM.
+                        </li>
+                    </ul>
+                </li>
+                <li>Finish your element with an endtag, <code>&lt;/p&gt;
+                    </code>.</li>
+            </ol>
+            <p>Now you know how to use VIM to write simple text onto a
+            website!<p>
+        </section>
+    </main>
+    <footer>
+        <p><br><strong>Vim'd by Dante.</strong></p>
+    </footer>
+</body>
+</html>
