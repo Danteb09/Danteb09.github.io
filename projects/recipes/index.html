@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Dante's Family Recipes</title>
+        <title>Dante's Family Sweets</title>
         <script src="../../validate.js"></script>
         <style>
             body{
                 background-color: skyblue;
             } 
+            .image-container {
+            display: flex;
+            }
+<!-- i had to look up how do do this to get the captioned images 
+    to fit horizontally with eachother, along with the <figure> elements-->
         </style>
     </head>
     <body>
         <header>
-            <h1>Family Recipes</h1>
+            <h1>Family Desserts</h1>
         </header>
         <main>
             <h2>These are some recipes for some sweet things I like to eat
             </h2>
-            <ul>
-                <li><a href="1.html">Seven-layer bars</a></li>
-                <li><a href="2.html">Could this be...</a></li>
-            </ul>
+            <div class="image-container" >
+                <figure>
+                    <a href="1.html"><img width="250" alt="placeholder" 
+                    src="https://placehold.net/default.png">
+                    <figcaption>Seven-Layer Bars</figcaption> 
+                    </a>
+                </figure>
+                <figure>
+                    <a href="2.html"><img width="250" alt="placeholder"
+                    src="https://placehold.net/default.png">
+                    <figcaption>Pancakes with Manjar</figcaption> 
+                    </a>
+                </figure>
+            </div>
         </main>
         <footer>
             <p><strong>Vim'd by Dante</strong></p>
