@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="scroll-behavior: smooth;" lang="en">
     <head>
         <title>Seven-Layer Bars</title>
         <script src="../../validate.js"></script>
@@ -7,99 +7,176 @@
         body{
             background-color: skyblue;
         }
+        main{
+            font-size: 20px
+        }
+
+        .indent{
+            margin-left: 20px;
+        }
+        figure{
+            margin: 0px;
+        }
+        div{
+            display: flex;
+            gap: 15px;
+        }
+
         td,th,p,h1,h2,q{
             font-family:sans-serif;
         }
+
         hr{
             border: none;
             height: 2px;
             background-color: lightgray;
         }
+
         table,tr,th,td{ 
               border: 1px solid black; 
               border-collapse: collapse; 
               font-weight: normal;
-              font-size: 24px;
-        } 
+              text-transform: capitalize;
+        }
+
         td{ 
             background-color: white; 
         }
+
         th{ 
             background-color: lightgray; 
-        }
-        ol,li{
-            font-size: 24px;
-            font-weight: normal;
         }
         </style>
     </head>
     <body>
         <header>
-            <p style="font-size: 12"><a href="index.html">Return</a> to
+            <p><a href="index.html">Return</a> to
             recipe homepage
-            <!--img src="find an image-->
-            <h1>Seven-Layer Bars</h1>
-            
+            <h1>Seven-Layer Bars</h1> 
+            <p>Click <a href="#ingredients">here</a> to skip to recipe</p>
         </header>
         <main>
-            <p>Click <a href="#ingredients">here</a> to skip to recipe</p>
-            <p>This recipe is important because blah blah blah<br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br>test</p>
+            <div>
+                <div>
+                    <figure>
+                        <img width="300px" src="../../images/7layerbar.jpg">
+                    <figcaption>
+<cite style="font-size: 12px;" class="attribution"><a rel="noopener noreferrer"
+href="https://www.flickr.com/photos/23088039@N08/6043555710" target="_blank">
+Image</a> taken by <a target="_blank"
+rel="noopener noreferrer" href="https://www.flickr.com/photos/23088039@N08">
+Rachel from Cupcakes Take the Cake</a>,<br> licensed under 
+<a rel="noopener noreferrer" target="_blank" 
+    href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">
+CC BY 2.0</a>. Image cropped to 1:1 ratio.
+<!--creative common rights are adressed above-->
+</cite>
+                    </figcaption>
+                    </figure>
+                    </div>
+                <div>
+                    <p>
+Shortly after we moved here to Virginia in 2019, my mom's boss gave her some 
+seven-layer bars. Of course, my mom let me and my brothers have some, and we 
+all loved them. Except my dad, though, he says <q>coconut ruins everything,</q> but I disagree. Anyway, My mom asked her boss for the recipe, and she
+gave us a link to a website. Over time, we kept tweaking the ingredients and 
+procedure until it was perfected. By now, my brothers and I can list every 
+step by memory. We make these roughly once every two months just because of 
+how good they are, and my mom's boss still gifts her some every once in a 
+while.
+                    </p>
+                </div>
+            </div>
             <hr>
-            <h2>Ingredients</h2>
-            <table id="ingredients">
+            <h2 id="ingredients">Ingredients</h2>
+            <table class="indent">
                 <tr>
                     <th>Quantity</th>
                     <th>Ingredient</th>
                 </tr>
                 <tr>
-                    <td>#</td>
-                    <td>egg</td>
+                    <td>1 cup</td>
+                    <td>unsalted butter</td>
                 </tr>
                 <tr>
-                    <td>#</td>
-                    <td>egg</td>
+                    <td>2 packs (18 sheets)</td>
+                    <td>graham crackers</td>
                 </tr>
                 <tr>
-                    <td>#</td>
-                    <td>egg</td>
+                    <td>1 cup</td>
+                    <td>chocolate chips</td>
                 </tr>
                 <tr>
-                    <td>#</td>
-                    <td>egg</td>
+                    <td>1 cup</td>
+                    <td>butterscotch chips</td>
                 </tr>
                 <tr>
-                    <td>#</td>
-                    <td>egg</td>
+                    <td>1 cup</td>
+                    <td>white chocolate chips</td>
                 </tr>
-            </table>
-            <table>
+                <tr>
+                    <td>1 cup</td>
+                    <td>chopped pecans</td>
+                </tr>
+                <tr>
+                    <td>1 can (14 ounces)</td>
+                    <td>sweetened condensed milk</td>
+                </tr>
+                <tr>
+                    <td>1 1/3 cups</td>
+                    <td>shredded coconut</td>
+                </tr>
+            </table><br>
+            <table class="indent">
                 <tr>
                     <th>Materials</th>
                 </tr>
                 <tr>
-                    <td>pan</td>
+                    <td>9x13 baking pan</td>
                 </tr>
                 <tr>
-                    <td>pan</td>
+                    <td>knife (to cut bars)</td>
                 </tr>
                 <tr>
-                    <td>pan</td>
+                    <td>microwavable bowl</td>
+                </tr>
+                <tr>
+                    <td>mortar (optional)</td>
                 </tr>
             </table>
-            <h2>Instructions<h2>
+            <h2>Instructions</h2>
             <ol>
-                <li>step</li>
-                <li>step</li>
-                <li>step</li>
-                <li>step</li>
-            </ol>
+                <li>Preheat oven to 350°F/175°C</li>
+                <li>Use bowl to microwave butter in 10-second intervals 
+                    until liquified, and pour into baking pan</li>
+                <li>Smash graham crackers into fine pieces, by
+                    <ul>
+                        <li>Crushing the package with your hands, or</li>
+                        <li>Using a mortar to crush the crackers in the 
+                            bowl</li>
+                    </ul>
+                </li>
+                <li>Pour graham cracker sand into pan and evenly press
+                it out over the bottom of the pan</li>
+                <li>Evenly spread chocolates and pecans</li>
+                <li>Evenly sprinkle shredded coconut over the pan</li>
+                <li>Pour condensed milk over the coconut</li>
+                <li>Bake for 25 minutes or until golden brown</li>
+                <li>Let cool to room temperature before cutting into 12 bars
+                </li>
+            </ol> 
+            <p class="indent">Makes 12 roughly 3x4-inch bars<br>
+            Estimated time to create (not including cooling): 45 minutes</p>
             <h2>Extra Tips</h2>
             <ul>
-                <li>do this</li>
-                <li>do this</li>
-                <li>do this</li>
-                <li>do this</li>
+                <li>You can cut it to create more, smaller bars</li>
+                <li>Put coconut shreds on top of condensed milk if you want
+                    to enunciate the coconut's flavor</li>
+                <li>You can replace pecans with any kind of nut, but pecans
+                    are simply the best</li>
+                <li>If you want thinner bars, use half as much butter and
+                    graham crackers</li>
+                <li>These bars be enjoyed cold or warm</li>
             </ul>
         </main>
         <footer>
