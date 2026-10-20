@@ -1,0 +1,14 @@
+body{
+    background-color: lemonchiffon;
+} 
+
+header,footer{
+    background-color: skyblue;
+}
+footer{
+    font-size: 2em;
+}
+table,tr,td,th{
+    border: 3px black solid;
+    border-collapse: collapse;
+}
