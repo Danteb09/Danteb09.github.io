@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Box Model Practive</title>
+        <script src="../validate.js"></script>
+        <style>
+            .box{
+                height: 100px;
+                width: 100px;
+                border: 2px solid;
+                background-clip: content-box;
+            }
+            #red{
+                background-color: red;
+                margin-left: 300px;
+            }
+            #blue{
+                background-color: blue;
+                margin-left: 403px;
+                padding: 100px;
+            }
+            #green{
+                background-color: green;
+                padding-left: 25px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            #yellow{
+                background-color: yellow;
+                margin-left: 300px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 40px;
+            }
+            #purple{
+                background-color: purple;
+                margin-left: 200px;
+                padding-bottom: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Boxes for Practicing</h1>
+        <div class="box" id="red"></div> 
+        <div class="box" id="blue"></div>
+        <div class="box" id="green"></div>
+        <div class="box" id="yellow"></div>
+        <div class="box" id="purple"></div>
+    </body>
+</html>
