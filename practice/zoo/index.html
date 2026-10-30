@@ -6,25 +6,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the City Zoo</h1>
+    <header class="padded">
+        <h1 class="first">Welcome to the City Zoo</h1>
         <p>Explore the wonders of wildlife at the City Zoo!</p>
     </header>
     <nav>
-        <ul>
+        <ul class="navbar">
             <li><a href="index.html">Home</a></li>
             <li><a href="animals.html">Animals</a></li>
+            <li><a href="index.html#times">Schedule</a></li>
+            <li><a href="index.html#food">Food</a></li>
         </ul>
     </nav>
     <main>
         <section>
-            <h2>Zoo Information</h2>
-            <p>Our zoo is home to hundreds of animals from all over the world. Here's a quick guide to help you plan your visit:</p>
+            <h2 id="title">Zoo Information</h2>
+            <p class="first">Our zoo is home to hundreds of 
+            animals from all over the world. Here's a quick guide to 
+            help you plan your visit:</p>
             <table>
-                <caption>Zoo Hours and Admission</caption>
+                <caption id="times">Zoo Hours and Admission</caption>
                 <thead>
                     <tr>
-                        <th>Day</th>
+                        <th class="second">Day</th>
                         <th>Hours</th>
                         <th>Admission</th>
                     </tr>
@@ -42,6 +46,17 @@
                     </tr>
                 </tbody>
             </table>
+            <h2 class="second">Meals and Refreshments</h2>
+            <p>Our cafeterias are open for all admission hours. 
+            Enjoy the many kinds of food within! Don't feed the animals.
+            </p>
+            <ul id="food">
+                <li>Cheesesteaks</li>
+                <li>BLT</li>
+                <li>Pizza</li>
+                <li>Hot dogs</li>
+                <li>Frozen Yogurt</li>
+            </ul>
         </section>
     </main>
     <footer>

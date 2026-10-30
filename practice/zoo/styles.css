@@ -1,14 +1,54 @@
 body{
     background-color: lemonchiffon;
 } 
+header{
+    background-color: tan;
+}
 
-header,footer{
-    background-color: skyblue;
-}
 footer{
-    font-size: 2em;
+    background-color: lightgray;
 }
+
 table,tr,td,th{
-    border: 3px black solid;
+    border: 2px black solid;
     border-collapse: collapse;
+    text-align: center;
+}
+
+.first{
+    font-size: 2em;       
+}
+
+.second{
+    color: navy;
+}
+
+#title{
+    color: darkorange;
+}
+
+.padded{
+    padding: 10px;
+    padding-left: 20px
+}
+
+.navbar{
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+.navbar a{
+    padding: 10px;
+    background-color: darkorange;
+    border: 2px black solid;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.navbar a:hover{
+    background-color: RGB(240,140,80);
+    color: cyan;
 }
