@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <title>Chocolates</title>
+        <script src="../validate.js"></script>
+        <style>
+            body{
+                background: linear-gradient(135deg, #1a2980, #26d0ce);
+                height: 100vh;
+            }
+            h1{
+                text-align: center;
+                font-family: Tahoma, sans-serif;
+                color: white;
+            }
+            .container {
+              display: grid;
+              width: 80vw;
+              height: 80vh;
+              margin: auto;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-rows: 1fr 1fr 1fr;
+              background-color: Thistle;
+              padding: 10px;
+              border-radius: 20px;
+              border: 8px solid red;
+            }
+            .lilbits{
+                grid-column-start: 1;
+                grid-row-start: 1;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+            #mnm{
+                grid-column-start:1;
+                grid-row-start:1;
+                width:10vw;
+                height:10vh;
+                background-color:red;
+                border-radius:50%;
+                margin: auto;
+                display: grid;
+                place-items: center;
+                font-size: 2em;
+            }
+            #choccirc{
+                width: 16vw;
+                height: 16vh;
+                display: grid;
+                grid-column: 2/4;
+                grid-row: 1/3;
+                background-color: #733f20;
+                border-radius: 50%;
+            }
+            #pmnm{
+                width: 10vw;
+                height: 20vh;
+                background-color: yellow;
+                border-radius: 50%;
+                display: grid;
+                grid-area: 2/1/4/2;
+                font-size: 2em;
+                place-items: center;
+            }
+            #roloout{
+                aspect-ratio: 1;
+                background: 
+           radial-gradient(brown, #733f20) 
+            brown;
+                border-radius: 50%;
+                width: 14vw;
+                height: 14vh;
+                display: grid;
+                grid-area: 4/2/2/4;
+                align-self: end;
+            }
+            #roloin{
+                background-color: #733f20;
+                border-radius: 50%;
+                width: 10vw;
+                height: 10vh;
+                justify-self: center;
+                align-self: center;
+            }
+            #reeses1 {
+                justify-self: center;
+                width: 26vh; /* adjust to control the size */
+                aspect-ratio: 1;
+  --g:/6.138% 6.138% radial-gradient(#000 calc(71% - 1px),#0000 71%) no-repeat;
+  mask: 100% 50% var(--g),99.572% 56.526% var(--g),98.296% 62.941% var(--g),96.194% 69.134% var(--g),93.301% 75% var(--g),89.668% 80.438% var(--g),85.355% 85.355% var(--g),80.438% 89.668% var(--g),75% 93.301% var(--g),69.134% 96.194% var(--g),62.941% 98.296% var(--g),56.526% 99.572% var(--g),50% 100% var(--g),43.474% 99.572% var(--g),37.059% 98.296% var(--g),30.866% 96.194% var(--g),25% 93.301% var(--g),19.562% 89.668% var(--g),14.645% 85.355% var(--g),10.332% 80.438% var(--g),6.699% 75% var(--g),3.806% 69.134% var(--g),1.704% 62.941% var(--g),0.428% 56.526% var(--g),0% 50% var(--g),0.428% 43.474% var(--g),1.704% 37.059% var(--g),3.806% 30.866% var(--g),6.699% 25% var(--g),10.332% 19.562% var(--g),14.645% 14.645% var(--g),19.562% 10.332% var(--g),25% 6.699% var(--g),30.866% 3.806% var(--g),37.059% 1.704% var(--g),43.474% 0.428% var(--g),50% 0% var(--g),56.526% 0.428% var(--g),62.941% 1.704% var(--g),69.134% 3.806% var(--g),75% 6.699% var(--g),80.438% 10.332% var(--g),85.355% 14.645% var(--g),89.668% 19.562% var(--g),93.301% 25% var(--g),96.194% 30.866% var(--g),98.296% 37.059% var(--g),99.572% 43.474% var(--g),radial-gradient(100% 100%,#000 46.83%,#0000 calc(46.83% + 1px));
+                display: grid;
+                grid-area: 1/2/2/3;
+                background-color:#733f20 ;
+                align-self: center;
+            }
+            #caramelchoc{
+                width: 15vw;
+                aspect-ratio: 1;
+                background-color: #733f20; 
+                display: grid;
+                grid-area: 1/3/2/4;
+                align-self: center;
+                justify-self: center;
+                border-radius: 4vh;
+            }
+            #kitkatbot{
+                align-self: center;
+                justify-self: center;
+                background-color: #733f20;
+                height:15vh;
+                width:40vw;
+                display:grid;
+                grid-template-rows: 2fr 1fr 2fr;
+                grid-area: 2/1/3/3;
+            }
+            .kit{
+                background-color:#915029;  
+            }
+            #kitwaf1{
+                grid-area: 1/1/2/2;
+                margin-top: 1vh;
+                margin-left: 1vh;
+                margin-right: 1vh;
+            }
+            #kitwaf2{
+                grid-area: 3/1/4/2;
+                margin-bottom: 1vh;
+                margin-left: 1vh;
+                margin-right: 1vh;
+            }
+            #lindt {
+                width: 20vh;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                background: 
+                radial-gradient(circle at 40% 30%,#0000 4%,57%,#000 90%) #915029;
+                grid-area:3/1/4/2;
+                background-color:#915029; 
+                justify-self: center;
+                align-self: center;
+            }
+            #hershey{
+                height: 20vh;
+                aspect-ratio: 3;
+                background-color:#733f20;
+                grid-area: 3/2/4/4;
+                justify-self: center;
+                align-self: center;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .square{
+                margin: 1vh;
+                background-color:#915029;
+            }
+            #lazynotime {
+                width: 15vw;
+                aspect-ratio: 1;
+                background-color: #915029;
+                grid-area: 2/3/3/4;
+                align-self: center;
+                justify-self: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Here, I got you some chocolates &lt;3</h1>
+        <div class="container">
+            <div class="heart" id="chocolateheart"></div>
+            <div class="lilbits">
+                <div id="mnm">
+                m
+                </div>
+                <div id="choccirc"></div>
+                <div id="pmnm">m</div>
+                <div id="roloout">
+                    <div id="roloin"></div>
+                </div>
+            </div>
+            <div id="reeses1"></div>
+            <div id="caramelchoc"></div>
+            <div id="kitkatbot">
+                <div class="kit" id="kitwaf1"></div>
+                <div class="kit" id="kitwaf2"></div>
+            </div>
+            <div id="lindt"></div>
+            <div id="hershey">
+                <div id="sq1" class="square"></div>
+                <div id="sq2" class="square"></div>
+                <div id="sq3" class="square"></div>
+                <div id="sq4" class="square"></div>
+                <div id="sq5" class="square"></div>
+                <div id="sq6" class="square"></div>
+            </div>
+            <div id="lazynotime"></div>
+        </div>
+    </body>
+</html> 
+
